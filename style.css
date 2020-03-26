@@ -1,0 +1,207 @@
+*{
+/*    background-color:grey;*/
+    font-size: 18px;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+}
+.total-container{
+    text-align: center;
+/*    background-color:aliceblue;*/
+    height: 100vh;
+}
+.heading{
+/*    color:red;*/
+    margin-bottom: 10px;
+}
+.heading h1{
+    font-size:166%;
+    font-weight: bold;
+}
+.current-player{
+    font-size: 148%;
+}
+.current-player{
+    background-color: black;
+    color:white;
+    display: inline-block;
+    margin:1%;
+    padding:0.5%;
+}
+.scoring-section{
+/*    background-color:yellow;*/
+    display: inline-block;
+    padding:1%;
+}
+
+li{
+    list-style: none;
+    display: inline;
+}
+.all-balls{
+    display: inline-block;
+    color:white;
+    background-color:black;
+    width: 50px;
+    position: relative;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin:0.5%;
+}
+.all-balls:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+.running-area{
+/*    background-color:blue;*/
+    margin-bottom:2%;
+    margin-top:2%;
+    
+}
+.ball-hit,.ball-throw{
+    width:15%;
+    display: inline-block;
+    padding:2%;
+}
+.batting-hit{
+    
+}
+.bowling-hit{
+    
+}
+.ball-index{
+    position: absolute;
+    top:50%;
+    left:50%;
+    font-weight:bold;
+    font-size:150%;
+    transform: translate(-50%,-50%);
+}
+
+.target-area h2{
+/*    display: none;*/
+/*    background-color:burlywood;*/
+    font-size: 100%;
+}
+.target-area h1{
+    font-size:166%;
+}
+
+.target-given, .target-to-be-chase{
+/*    background-color: aqua;*/
+    padding:1%;
+    display: inline-block;
+}
+.player-style{
+    background-color:black;
+    border-radius: 5%;
+    color:white;
+}
+.hide-target{
+    display: none;
+}
+
+
+
+.final-result {
+    background-color:rgba(255, 255, 255, 0.83);
+    width:100%;
+    height:100vh;
+    position: absolute;
+    z-index: 25;
+    display: none;
+}
+
+.result-heading{
+/*    background-color:red;*/
+}
+.close-button{
+    text-align: right;
+    padding-right:2%;
+    padding-top:2%;
+    font-weight: bold;
+}
+.result-box{
+    position: absolute;
+    width:100%;
+    padding:2%;
+    background-color:black;
+    color:white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+.close-button:hover{
+    color:red;
+    cursor: pointer;
+}
+.first-batting h2 {
+    font-size:111%;
+}
+
+.ball-holder {
+/*    background-color:yellow;*/
+    position: absolute;
+    width:100%;
+    bottom:5%;
+}
+
+
+
+
+
+
+
+
+
+/*Media queries*/
+
+/*laptops and desktops*/
+@media only screen and (max-width:1200px) {
+    
+}
+/*potrait mode for tabs*/
+@media only screen and (max-width:1023px) {
+    .ball-hit,.ball-throw{
+    width:25%;
+    }
+    .heading{
+    padding-top: 3%;
+    }
+    .running-area{
+    margin-bottom:2%;
+    margin-top:8%;
+    }
+    .target-area{
+        margin-top: 2%;
+    }
+}
+/*tabs*/
+@media only screen and (max-width:767px) {
+    .ball-hit,.ball-throw{
+    width:25%;
+    }
+    
+}
+/*normal phones*/
+@media only screen and (max-width:480px) {
+    *{
+        font-size:16px;
+    }
+    .ball-hit,.ball-throw{
+    width:40%;
+    }
+    .heading{
+    padding-top: 10%;
+    }
+    .running-area{
+    margin-bottom:2%;
+    margin-top:15%;
+    }
+    .target-area{
+        margin-top: 5%;
+    }
+}
